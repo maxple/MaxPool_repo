@@ -10,6 +10,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Screen;
 import javafx.stage.Stage;
 
 /**
@@ -22,8 +23,9 @@ public class MaxPool extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
 
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root, 1000, 1000);
 
+        stage.setTitle("FXML welcome");
         stage.setScene(scene);
         stage.show();
     }
